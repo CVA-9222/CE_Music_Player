@@ -1,12 +1,10 @@
 public class Node {
     public Object data;
     public Node next;
-    public Node
-    //Para una lista doblemente enlazada se debe crear otro nodo que en lugar de next sea previuos. MMM
 
     public Node(Object data) {
-        this.next = null;
         this.data = data;
+        this.next = null;
     }
 
     public Object getData() {
