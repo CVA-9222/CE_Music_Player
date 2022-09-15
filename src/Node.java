@@ -1,6 +1,6 @@
 public class Node {
-    public Object data;
-    public Node next;
+    private Object data;
+    private Node next;
 
     public Node(Object data) {
         this.data = data;

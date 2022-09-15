@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5fb8c36-f86c-48f8-9098-2d90dd045f12" name="Changes" comment="Resolución de warnings en clase Node">
-      <change afterPath="$PROJECT_DIR$/Test/NodeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CE_Music_Player.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CE_Music_Player.iml" afterDir="false" />
+    <list default="true" id="b5fb8c36-f86c-48f8-9098-2d90dd045f12" name="Changes" comment="Creación de Root Test y Clase Test para Node">
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663271841813</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creación de Root Test y Clase Test para Node">
+      <created>1663273009715</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663273009715</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
     <MESSAGE value="Resolución de warnings en clase Node" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolución de warnings en clase Node" />
+    <MESSAGE value="Creación de Root Test y Clase Test para Node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creación de Root Test y Clase Test para Node" />
   </component>
 </project>
