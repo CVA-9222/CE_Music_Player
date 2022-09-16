@@ -15,5 +15,5 @@ public class DoubleNode extends Node {
     public void setPrev(Node prev) {
         this.prev = prev;
     }
-
+}
 
