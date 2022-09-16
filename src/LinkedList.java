@@ -52,10 +52,8 @@ public class LinkedList {
     }
 
     public void insertByIndex (Object data, int index){
-        Node newNode= new Node (data);
-        Node current = this.head;
         if (index < 0){
-            System.out.print("Posición inválida");
+            System.out.println("Index inválido\n");
         }
         else if (index == size - 1) {
             this.insertLast(data);
@@ -64,24 +62,21 @@ public class LinkedList {
             this.insertFirst(data);
         }
         else if (index>=size) {
-            System.out.print("Posición fuera de rango");
+            System.out.println("Index fuera de rango\n");
+        }
+        else{ // En cualquier otro caso
+            Node current = this.head; // Node actual es igual a nodo head
+            for(int i =0; i<index-1; i++) { // recorrer lista hasta llegar a nodo previo al index deseado
+                current = current.getNext(); //iterar hasta obtner nodo deseado
+            }
+            Node newNode= new Node (data); //Crear nuevo nodo con data dada
+            Node temp = current.getNext(); //Almacenar temporalmente siguiente nodo
+            newNode.setNext(temp); //Asignar nodo temporal como next del nodo insertado
+            current.setNext(newNode); //Asignar nuevo nodo al next del nodo del index-1
+           this.size++; //Aumentar tamaño de la lista
         }
 
-       // for (int i; i<index; i++){
-         //   if(i == index-1) {
-           //     current=current.getNext();
-            //}
-              //  this.head = newNode;
-           // this.size++;
-        //}
-
     }
-
-
-
-
-
-
 
     public void displayList() {
         Node current = this.head;
@@ -98,23 +93,42 @@ public class LinkedList {
 
 
     public static void main(String[] args) {
-        LinkedList test1=new LinkedList(6);
         LinkedList test = new LinkedList();
-        Node a1 = new Node("Mariela");
-        test.displayList();
+
         test.insertLast(890);
         test.displayList();
-        System.out.println(test.size());
-        Node a2 = new Node("Claudio");
+        System.out.println("List Size: "+test.size()+"\n");
+
         test.insertFirst(6);
         test.displayList();
-        System.out.println(test.size());
-        Node a3 = new Node("Luis");
+        System.out.println("List Size: "+test.size()+"\n");
+
         test.insertLast(67);
         test.displayList();
-        System.out.println(test.size());
+        System.out.println("List Size: "+test.size()+"\n");
+
         test.insertFirst(456);
         test.displayList();
-        System.out.println(test.size());
+        System.out.println("List Size: "+test.size()+"\n");
+
+        test.insertByIndex(800, -5);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+
+        test.insertByIndex(800, 10);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+
+        test.insertByIndex(801, 0);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+
+        test.insertByIndex("Hola", 5);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+
+        test.insertByIndex("Hola Que Tal", 3);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
     }
 }
