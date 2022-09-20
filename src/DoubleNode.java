@@ -16,4 +16,3 @@ public class DoubleNode extends Node {
         this.prev = prev;
     }
 }
-

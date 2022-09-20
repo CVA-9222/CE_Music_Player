@@ -154,6 +154,48 @@ public class LinkedList {
             }
     }
 
+    public void removeByIndex(int index){
+        if (index < 0){
+            System.out.println("Index inválido\n");
+        }
+        else if (index == size-1) {
+            this.removeLast();
+        }
+        else if (index== 0) {
+            this.removeFirst();
+        }
+        else if (index>=size) {
+            System.out.println("Index fuera de rango\n");
+        }
+        else{
+            Node current = this.head;
+            for(int i =0; i<index-1; i++) {
+                current = current.getNext();
+            }
+            Node next=current.getNext();
+            current.setNext(next.getNext());
+            size--;
+        }
+
+    }
+
+
+    public Node getByIndex(int index) throws Exception{
+        if (index<=size-1 && index>=0){
+            int cont = 0;
+            Node current = this.head;
+            while(index!= cont){
+                cont ++;
+                current = current.getNext();
+            }
+            return current;
+        }else {
+            throw new Exception("Valor inexistente en la lista.");
+        }
+    }
+
+
+
     public void displayList() {
         Node current = this.head;
         if (head == null) {
@@ -228,5 +270,25 @@ public class LinkedList {
         test.removeLast();
         test.displayList();
         System.out.println("List Size: "+test.size()+"\n");
+
+        test.removeByIndex(-4);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+
+
+        test.removeByIndex(10);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+
+        test.removeByIndex(2);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+        try{
+            System.out.println("Data Index: "+test.getByIndex(3).getData()+"\n");
+            test.getByIndex(3);
+        }
+        catch (Exception e){
+        }
+
     }
 }
