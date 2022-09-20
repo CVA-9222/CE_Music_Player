@@ -1,3 +1,6 @@
+import javax.xml.crypto.Data;
+import java.lang.Object;
+
 public class LinkedList {
     public Node head;
     public int size;
@@ -28,7 +31,11 @@ public class LinkedList {
 
 
 
-
+    /**
+     * Inserta objeto al final de la lista
+     * El nuevo nodo se enlaza al que estaba en última posición anteriormente.
+     * @param data Nuevo nodo
+     */
     public void insertLast (Object data) {
         Node newNode= new Node (data);
         if (this.head==null) {
@@ -44,6 +51,11 @@ public class LinkedList {
         this.size++;
     }
 
+    /**
+     *     Inserta objeto al inicio de la lista
+     *     El nuevo nodo se enlaza al que estaba en primera posición anteriormente.
+     * @param data Nuevo nodo
+     */
     public void insertFirst (Object data){
         Node newNode= new Node (data);
         newNode.setNext(this.head);
@@ -51,11 +63,18 @@ public class LinkedList {
         this.size++;
     }
 
+
+    /**
+     *  Inserta objeto según índice o posición deseada.
+     * Se busca la ubicación requerida. El nuevo nodo se enlaza a uno temporal y se asigna el nodo como next al anterior.
+     * @param data Nodo nuevo a colocar
+     * @param index Posición en la que se ubicará el nuevo nodo
+     */
     public void insertByIndex (Object data, int index){
         if (index < 0){
             System.out.println("Index inválido\n");
         }
-        else if (index == size - 1) {
+        else if (index == size) {
             this.insertLast(data);
         }
         else if (index== 0) {
@@ -78,11 +97,77 @@ public class LinkedList {
 
     }
 
+    /**
+     * Obtiene el valor del primer elemnto de la lista
+     * @return el valor del primer elemento de la lista
+     * @throws Exception
+     */
+    public Object getFirst () throws Exception{
+       Object current = this.head;
+        if (head == null) {
+            throw new Exception("Lista vacía, no hay primer elemento");
+            }
+        else {
+            return head.getData();
+            }
+    }
+
+    /**
+     *  Recorre la lista hasta la posición final.
+     * @return retorna el valor del nodo.
+     * @throws Exception  Crea una excepción para lista vacía.
+     */
+    public Object getLast () throws Exception{
+        if (head == null) {
+            throw new Exception("Lista vacía, no hay último elemento");
+        }
+        else {
+            Node current = this.head;
+            for (int i = 0; i < size-1; i++) {
+                current = current.getNext();
+            }
+            return current.getData();
+        }
+    }
+
+
+    public void removeFirst(){
+        Node current = this.head;
+            if (this.head ==null){
+                System.out.println("Lista vacía, no se puede eliminar\n");
+            }
+            else {
+                this.head = this.head.getNext();
+                this.size--;
+            }
+    }
+
+
+
+    /**
+     *Busca el nodo hasta el anterior al nodo final y elimina la referencia del nodo
+     */
+    public void removeLast(){
+        Node current = this.head;
+        if (this.head ==null){
+            System.out.println("Lista vacía, no se puede eliminar\n");
+        }
+        else  {
+            for (int i = 0; i < size-2; i++) {
+                current = current.getNext();
+            }
+            current.setNext(null);
+            this.size--;
+            }
+    }
+
+
+
     public void displayList() {
         Node current = this.head;
         if (head == null) {
             System.out.println("Empty");
-        } else {
+            } else {
             while (current != null) {
                 System.out.println(current.getData());
                 current = current.getNext();
@@ -90,11 +175,14 @@ public class LinkedList {
         }
     }
 
-
-
     public static void main(String[] args) {
         LinkedList test = new LinkedList();
-
+        try{
+            System.out.println("First Node: "+test.getFirst()+"\n");
+            test.getFirst();
+        }
+        catch (Exception e){
+        }
         test.insertLast(890);
         test.displayList();
         System.out.println("List Size: "+test.size()+"\n");
@@ -119,15 +207,34 @@ public class LinkedList {
         test.displayList();
         System.out.println("List Size: "+test.size()+"\n");
 
-        test.insertByIndex(801, 0);
+        test.insertByIndex(78, 0);
         test.displayList();
         System.out.println("List Size: "+test.size()+"\n");
 
-        test.insertByIndex("Hola", 5);
+        test.insertByIndex("100", 5);
         test.displayList();
         System.out.println("List Size: "+test.size()+"\n");
 
-        test.insertByIndex("Hola Que Tal", 3);
+        test.insertByIndex("Hola Que Tal", 4);
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+        try{
+            System.out.println("First Node: "+test.getFirst()+"\n");
+            test.getFirst();
+        }
+        catch (Exception e){
+        }
+        try{
+            System.out.println("Last Node: "+test.getLast()+"\n");
+            test.getLast();
+            }
+        catch (Exception e){
+            }
+        test.removeFirst();
+        test.displayList();
+        System.out.println("List Size: "+test.size()+"\n");
+
+        test.removeLast();
         test.displayList();
         System.out.println("List Size: "+test.size()+"\n");
     }

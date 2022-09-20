@@ -1,3 +1,5 @@
+
+
 public class Node {
     private Object data;
     private Node next;
@@ -15,6 +17,7 @@ public class Node {
         return this.data;
     }
 
+
     public void setData(Object data) {
         this.data = data;
     }
@@ -27,3 +30,4 @@ public class Node {
         this.next = node;
     }
 }
+
