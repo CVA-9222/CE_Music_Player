@@ -28,9 +28,6 @@ public class LinkedList {
         return this.size;
     }
 
-
-
-
     /**
      * Inserta objeto al final de la lista
      * El nuevo nodo se enlaza al que estaba en última posición anteriormente.
@@ -94,7 +91,6 @@ public class LinkedList {
             current.setNext(newNode); //Asignar nuevo nodo al next del nodo del index-1
            this.size++; //Aumentar tamaño de la lista
         }
-
     }
 
     /**
@@ -102,13 +98,12 @@ public class LinkedList {
      * @return el valor del primer elemento de la lista
      * @throws Exception
      */
-    public Object getFirst () throws Exception{
-       Object current = this.head;
+    public Node getFirst () throws Exception{
         if (head == null) {
             throw new Exception("Lista vacía, no hay primer elemento");
             }
         else {
-            return head.getData();
+            return head;
             }
     }
 
@@ -117,7 +112,7 @@ public class LinkedList {
      * @return retorna el valor del nodo.
      * @throws Exception  Crea una excepción para lista vacía.
      */
-    public Object getLast () throws Exception{
+    public Node getLast () throws Exception{
         if (head == null) {
             throw new Exception("Lista vacía, no hay último elemento");
         }
@@ -126,7 +121,7 @@ public class LinkedList {
             for (int i = 0; i < size-1; i++) {
                 current = current.getNext();
             }
-            return current.getData();
+            return current;
         }
     }
 
@@ -141,8 +136,6 @@ public class LinkedList {
                 this.size--;
             }
     }
-
-
 
     /**
      *Busca el nodo hasta el anterior al nodo final y elimina la referencia del nodo
@@ -160,8 +153,6 @@ public class LinkedList {
             this.size--;
             }
     }
-
-
 
     public void displayList() {
         Node current = this.head;
@@ -219,13 +210,13 @@ public class LinkedList {
         test.displayList();
         System.out.println("List Size: "+test.size()+"\n");
         try{
-            System.out.println("First Node: "+test.getFirst()+"\n");
+            System.out.println("First Node: "+test.getFirst().getData()+"\n");
             test.getFirst();
         }
         catch (Exception e){
         }
         try{
-            System.out.println("Last Node: "+test.getLast()+"\n");
+            System.out.println("Last Node: "+test.getLast().getData()+"\n");
             test.getLast();
             }
         catch (Exception e){
