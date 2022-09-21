@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5fb8c36-f86c-48f8-9098-2d90dd045f12" name="Changes" comment="Se cambia return de getFirst y get last a Node">
-      <change afterPath="$PROJECT_DIR$/src/LogIn.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LogIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainInterface.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RegisterPanel.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RegisterPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DoubleCircularLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleCircularLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoubleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +25,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-18.0.2.1/lib/src.zip!/java.base/java/io/PrintStream.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2Em4XdZThzwsXzA1l7sdY4qlnU7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -179,13 +175,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DoubleCircularLL.java</url>
-          <line>81</line>
+          <line>279</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DoubleCircularLL.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="11" />
+          <line>215</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DoubleCircularLL.java</url>
+          <line>273</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

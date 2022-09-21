@@ -94,7 +94,7 @@ public class LinkedList {
     }
 
     /**
-     * Obtiene el valor del primer elemnto de la lista
+     * Obtiene el valor del primer elemento de la lista
      * @return el valor del primer elemento de la lista
      * @throws Exception
      */
