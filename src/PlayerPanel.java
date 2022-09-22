@@ -15,11 +15,11 @@ public class PlayerPanel {
     }
 
     private void createUIComponents() {
-        Icon icon = new ImageIcon("src/media/previous.png");
+        Icon icon = new ImageIcon("media/previous.png");
         prevButton = new JButton(icon);
-        icon = new ImageIcon("src/media/play-and-pause-button.png");
+        icon = new ImageIcon("media/play-and-pause-button.png");
         ppButton = new JButton(icon);
-        icon = new ImageIcon("src/media/forward-button.png");
+        icon = new ImageIcon("media/forward-button.png");
         nextButton = new JButton(icon);
         // TODO: place custom component creation code here
     }
