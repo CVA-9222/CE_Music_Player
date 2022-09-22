@@ -16,18 +16,33 @@ public class LogIn extends Container {
     private JTextField userTextField;
     private JLabel welcomeLabel;
 
-
-
     public LogIn(MainInterface mainFrame) {
-        this.mainFrame = mainFrame;
-
+        this.mainFrame = mainFrame;;
         registrarmeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                mainFrame.showRegister();
+                showRegister();
+            }
+        });
+        logInButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                showPlayerPanel();
             }
         });
     }
 
-    public JPanel getPanel(){ return this.logInPanel;}
+    public JPanel getPanel(){
+            return this.logInPanel;
+    }
+
+    public void showRegister(){
+        mainFrame.showRegister();
+    }
+
+    public void showPlayerPanel(){
+        mainFrame.showPlayerPanel();
+    }
 }
+
+

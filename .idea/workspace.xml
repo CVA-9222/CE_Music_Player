@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5fb8c36-f86c-48f8-9098-2d90dd045f12" name="Changes" comment="Se cambia return de getFirst y get last a Node">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PlayerPanel.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PlayerPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoubleCircularLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleCircularLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegisterPanel.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegisterPanel.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegisterPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegisterPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +86,15 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="CE_Music_Player" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

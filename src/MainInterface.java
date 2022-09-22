@@ -6,6 +6,7 @@ public class MainInterface extends JFrame {
     private JPanel mainPanel;
     private LogIn logInPanel = new LogIn(this);
     private RegisterPanel registerPanel = new RegisterPanel(this);
+    private PlayerPanel playerPanel = new PlayerPanel(this);
 
     public MainInterface(String title) {
         super(title);
@@ -21,10 +22,17 @@ public class MainInterface extends JFrame {
 
     public void showLogIn(){
         this.setContentPane(this.logInPanel.getPanel());
+        this.pack();
     }
 
     public void showRegister(){
         this.setContentPane(this.registerPanel.getPanel());
+        this.pack();
+    }
+
+    public void showPlayerPanel(){
+        this.setContentPane(this.playerPanel.getPanel());
+        this.pack();
     }
 
 }
