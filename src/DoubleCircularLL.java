@@ -271,8 +271,18 @@ public class DoubleCircularLL{
         test.displayList();
         System.out.println("List Size: "+test.size()+"\n");
         try{
-            System.out.println("\nGet By Index: "+test.getByIndex(6).getData()+"\n");
-            test.getByIndex(6);
+            System.out.println("\nGet By Index: "+test.getByIndex(10).getData()+"\n");
+            test.getByIndex(10);
+        }
+        catch (Exception e){
+        }
+        try{
+            System.out.println("Print de Dato del Head: "+ test.getLast().getNext().getData());
+        }
+        catch (Exception e){
+        }
+        try{
+            System.out.println("Print de Dato del Last: "+ test.getHead().getPrev().getData());
         }
         catch (Exception e){
         }
