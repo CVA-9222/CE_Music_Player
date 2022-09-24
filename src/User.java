@@ -95,4 +95,9 @@ public class User {
 
     public void setProvince(String province) {
         this.province = province; }
+
+    @Override
+    public String toString() {
+        return "username: " + this.username + " password: " + this.password + " name: " + this.name + " fLName: " + this.fLName;
+    }
 }

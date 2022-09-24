@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5fb8c36-f86c-48f8-9098-2d90dd045f12" name="Changes" comment="Se cambia return de getFirst y get last a Node">
-      <change afterPath="$PROJECT_DIR$/src/CSVUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InterfaceAllData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InterfaceData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+    <list default="true" id="b5fb8c36-f86c-48f8-9098-2d90dd045f12" name="Changes" comment="se agrega archivo csv para usuarios">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/opencsv_5_7_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoubleCircularLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleCircularLL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Em4XdZThzwsXzA1l7sdY4qlnU7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -45,36 +41,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "266",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "258",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/cva92/IdeaProjects/CE_Music_Player/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;266&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;258&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cva92/IdeaProjects/jar_files/opencsv-5.7.0.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cva92\IdeaProjects\CE_Music_Player\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cva92\IdeaProjects\CE_Music_Player\media" />
+      <recent name="C:\Users\cva92\IdeaProjects\CE_Music_Player\data" />
       <recent name="C:\Users\cva92\IdeaProjects\CE_Music_Player" />
       <recent name="C:\Users\cva92\IdeaProjects\CE_Music_Player\src" />
     </key>
@@ -105,6 +103,8 @@
       <workItem from="1663187472208" duration="2226000" />
       <workItem from="1663693939824" duration="401000" />
       <workItem from="1663703225838" duration="10616000" />
+      <workItem from="1663886335531" duration="4789000" />
+      <workItem from="1663907984541" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1663197100327</created>
@@ -155,7 +155,35 @@
       <option name="project" value="LOCAL" />
       <updated>1663694080722</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="se agrega archivo csv para usuarios">
+      <created>1663871253404</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663871253404</updated>
+    </task>
+    <task id="LOCAL-00009" summary="se agrega archivo csv para usuarios">
+      <created>1663871303005</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663871303005</updated>
+    </task>
+    <task id="LOCAL-00010" summary="se agrega archivo csv para usuarios">
+      <created>1663871368456</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663871368456</updated>
+    </task>
+    <task id="LOCAL-00011" summary="se agrega archivo csv para usuarios">
+      <created>1663888577074</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663888577074</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,14 +210,15 @@
     <MESSAGE value="Implement methods isEmpty, insertLast in LinkedList Class" />
     <MESSAGE value="Implement methods insertFirst and part of insertByIndex in LinkedList Class" />
     <MESSAGE value="Se cambia return de getFirst y get last a Node" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se cambia return de getFirst y get last a Node" />
+    <MESSAGE value="se agrega archivo csv para usuarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agrega archivo csv para usuarios" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DoubleCircularLL.java</url>
-          <line>279</line>
+          <line>289</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
